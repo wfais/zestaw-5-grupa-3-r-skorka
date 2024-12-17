@@ -4,7 +4,7 @@ from itertools import product
 
 def maximize_expression(K, M, lists):
     # twoj kod tutaj
-    pass 
+    return max(sum(x**2 for x in combination) % M for combination in product(*lists))
 
 
 
